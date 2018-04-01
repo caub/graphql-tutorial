@@ -111,7 +111,7 @@ export const resolvers = {
       const newMessage = {
         id: String(lastMessageId++),
         text: message.text,
-        createdAt: +new Date(),
+        createdAt: Date.now(),
       };
       channel.messages.push(newMessage);
 
